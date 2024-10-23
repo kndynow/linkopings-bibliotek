@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="img/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="img/favicon.ico" />
     <title>Sök</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Linköpings bibliotek</h1>
-        <table>
-            <tr>
-                <td><a href="index.html">Start</a></td>
-                <td><a href="search.html"><strong>Sök bok</strong></a></td>
-                <td><a href="about.html">Om oss</a></td>
-                <td><a href="index.html#boktips">
-                        <font color="red">Utvalda Böcker</font>
-                    </a></td>
-            </tr>
-        </table>
+      <h1>Linköpings bibliotek</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li>
+            <a href="search.html"><strong>Sök bok</strong></a>
+          </li>
+          <li><a href="about.html">Om oss</a></li>
+          <li>
+            <a href="index.html#boktips">
+              <font color="red">Utvalda Böcker</font>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section>
-        <h2>Sök efter en bok</h2>
-        <form method="GET" action=""
-            onsubmit="window.location.href='db/'
+      <h2>Sök efter en bok</h2>
+      <form
+        method="GET"
+        action=""
+        onsubmit="window.location.href='db/'
             + document.getElementById('search').value
             + '.html'; return false;">
-            <label for="isbn">ISBN</label>
-            <input type="search" placeholder="Sök" id="search" required>
-            <input type="submit" value="Hitta boken">
-        </form>
+        <label for="isbn">ISBN</label>
+        <input type="search" placeholder="Sök" id="search" required />
+        <input type="submit" value="Hitta boken" />
+      </form>
     </section>
-
-</body>
-
+  </body>
 </html>
